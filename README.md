@@ -1,6 +1,13 @@
-# Welcome to Streamlit!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire. :heart:
+# Table of Contents
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+
+
+This repository defines a very basic UI for the ML-Zoomcamp Capstone Project, to
+be linked with Streamlit Cloud.
+
+Streamlit Documentation: <https://docs.streamlit.io/>
+
+The deployed UI URL:
+<https://angel-devicente-streamlit-mammography-streamlit-app-jtcdkq.streamlit.app/> 
+
