@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 import requests
 
 """
@@ -20,6 +21,15 @@ st.image(
 
 if st.button('Predict'):
     result = requests.post(url, json=data).json()
-    data['url']
-    result
+
+    data = {'ID' : ['mdb' + f'{idx:03d}' + '.jpg'],
+            'Probability abnormality' : [result['abnormal']],
+            'Prediction' : ['NORMAL' if result['abnormal'] < 0.5 else 'ABNORMAL']
+            }
+
+    df = pd.DataFrame(data)
+
+    st.write('### Mammography predictions')
+    st.dataframe(df)
+
 
